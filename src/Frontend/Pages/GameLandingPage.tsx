@@ -79,7 +79,7 @@ export function GameLandingPage() {
       .then((ethConnection) => {
           setEthConnection(ethConnection);
           // Player needs to approve RPC Endpoint for localtunnel;
-          if(!isProd) window.open(ethConnection.getRpcEndpoint());
+          if(process.env.DEV_PUBLIC_RPC) window.open(ethConnection.getRpcEndpoint());
       })
       .catch((e) => {
         alert('error connecting to blockchain');
@@ -670,8 +670,6 @@ export function GameLandingPage() {
       terminal.current?.println('');
 
       terminal.current?.newline();
-
-      // Press ENTER to receive a one-time whitelist drip of x ether?
 
       terminal.current?.println('Press ENTER to find a home planet. This may take up to 120s.');
       terminal.current?.println('This will consume a lot of CPU.');
