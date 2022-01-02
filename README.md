@@ -2,6 +2,9 @@
 
 # Dark Forest Client
 
+📣 To run this locally, make sure to run `git checkout local` 📣
+
+
 ## Development Guide
 
 ### Installing Core Dependencies
@@ -27,6 +30,8 @@ Refer to [Yarn's official documentation](https://classic.yarnpkg.com/en/docs/ins
 After you have Yarn installed, run `yarn` to install the dependencies:
 
 ### Running the client
+
+📣 To run this locally, make sure to run `git checkout local` 📣
 
 To connecting to the mainnet client, simply run `yarn start:prod`. When asked you can use your whitelist key or import your mainnet burner secret and home coordinates.
 
