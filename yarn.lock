@@ -1005,11 +1005,6 @@
     big-integer "^1.6.48"
     ethers "^5.5.1"
 
-"@darkforest_eth/snarks@6.7.0-staging-dec-3.0":
-  version "6.7.0-staging-dec-3.0"
-  resolved "https://registry.yarnpkg.com/@darkforest_eth/snarks/-/snarks-6.7.0-staging-dec-3.0.tgz#af587c4d8a93b3795acd1672d743ac27bbe77778"
-  integrity sha512-E84XEbCjxWL0fo/ysOwXKDdWXho4nR+tPLork7mMxdHjT+41IVliQvZF6xaF8lmZSY158SsMAyeG5pnJaKK2hQ==
-
 "@darkforest_eth/types@6.7.0-staging-dec-3.0":
   version "6.7.0-staging-dec-3.0"
   resolved "https://registry.yarnpkg.com/@darkforest_eth/types/-/types-6.7.0-staging-dec-3.0.tgz#1732070716e6b0e09d92c2f30f32b2f0ce6bd9b3"
@@ -1034,6 +1029,11 @@
   integrity sha512-QR6hcFiEiDzlqRkSQXVEe2YV2BTLHOT/Gcc/6z6pXeF7oF9BI1oi8qGWNvYiKZLciwBoz3XmZTHQt2u5yVXsAQ==
   dependencies:
     ethers "^5.5.2"
+
+"@dfdao/snarks@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@dfdao/snarks/-/snarks-1.0.0.tgz#51f3f6bca2a8b54525520247f1333004433f5606"
+  integrity sha512-bqu9tvnaIQmojC4d0eXOnb9FF9h6YNCthWDgFB0HZsWCwShRx3twLv4++aYbmSoW9pleJXqRiLNoKWnPi9/ZiA==
 
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.5"

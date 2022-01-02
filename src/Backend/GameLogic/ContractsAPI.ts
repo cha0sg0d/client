@@ -40,7 +40,7 @@ import type {
   InitSnarkContractCallArgs,
   MoveSnarkContractCallArgs,
   RevealSnarkContractCallArgs,
-} from '@darkforest_eth/snarks';
+} from '@dfdao/snarks';
 import {
   Artifact,
   ArtifactId,

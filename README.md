@@ -1,9 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b6a861d1-8c80-4785-a691-c3a5ea715e21/deploy-status)](https://app.netlify.com/sites/jolly-hermann-3947ca/deploys)
-
 # Dark Forest Client
 
-📣 To run this locally, make sure to run `git checkout local` 📣
-
+📣 To run this locally, make sure to run `git checkout local` before installing dependencies 📣
 
 ## Development Guide
 
