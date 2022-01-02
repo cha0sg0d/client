@@ -4,13 +4,13 @@ import {
   GETTERS_CONTRACT_ADDRESS,
   TOKENS_CONTRACT_ADDRESS,
   WHITELIST_CONTRACT_ADDRESS,
-} from '@darkforest_eth/contracts';
+} from '@dfdao/contracts';
 import type {
   DarkForestCore,
   DarkForestGetters,
   DarkForestTokens,
   Whitelist,
-} from '@darkforest_eth/contracts/typechain';
+} from '@dfdao/contracts/typechain';
 import {
   aggregateBulkGetter,
   ContractCaller,

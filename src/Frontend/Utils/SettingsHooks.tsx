@@ -1,4 +1,4 @@
-import { CORE_CONTRACT_ADDRESS } from '@darkforest_eth/contracts';
+import { CORE_CONTRACT_ADDRESS } from '@dfdao/contracts';
 import { monomitter, Monomitter } from '@darkforest_eth/events';
 import { AutoGasSetting, EthAddress } from '@darkforest_eth/types';
 import React, { useState } from 'react';

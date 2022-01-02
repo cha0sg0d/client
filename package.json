@@ -6,6 +6,7 @@
   "author": "0xPARC <ivan@0xPARC.org>",
   "dependencies": {
     "@darkforest_eth/constants": "6.7.0-staging-dec-3.0",
+    "@dfdao/contracts": "1.0.4",
     "@darkforest_eth/contracts": "6.7.0-staging-dec-3.0",
     "@darkforest_eth/events": "6.7.0-staging-dec-3.0",
     "@darkforest_eth/hashing": "6.7.0-staging-dec-3.0",

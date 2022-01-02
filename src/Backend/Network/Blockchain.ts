@@ -1,14 +1,14 @@
 // These are loaded as URL paths by a webpack loader
-import coreContractAbiUrl from '@darkforest_eth/contracts/abis/DarkForestCore.json';
-import gettersContractAbiUrl from '@darkforest_eth/contracts/abis/DarkForestGetters.json';
-import tokensContractAbiUrl from '@darkforest_eth/contracts/abis/DarkForestTokens.json';
-import whitelistContractAbiUrl from '@darkforest_eth/contracts/abis/Whitelist.json';
+import coreContractAbiUrl from '@dfdao/contracts/abis/DarkForestCore.json';
+import gettersContractAbiUrl from '@dfdao/contracts/abis/DarkForestGetters.json';
+import tokensContractAbiUrl from '@dfdao/contracts/abis/DarkForestTokens.json';
+import whitelistContractAbiUrl from '@dfdao/contracts/abis/Whitelist.json';
 import type {
   DarkForestCore,
   DarkForestGetters,
   DarkForestTokens,
   Whitelist,
-} from '@darkforest_eth/contracts/typechain';
+} from '@dfdao/contracts/typechain';
 import { createContract, createEthConnection, EthConnection } from '@darkforest_eth/network';
 import type { providers, Wallet } from 'ethers';
 
@@ -78,7 +78,7 @@ export function getEthConnection(): Promise<EthConnection> {
   if (isProd) {
     url = localStorage.getItem('XDAI_RPC_ENDPOINT_v5') || defaultUrl;
   } else {
-    url = process.env.DEV_PUBLIC_RPC || 'http://localhost:8545';
+    url = process.env.DEV_PUBLIC_RPC || process.env.DEFAULT_RPC || 'http://localhost:8545';
     console.log('dev rpc:', url);
   }
 

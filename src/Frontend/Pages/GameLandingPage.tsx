@@ -1,5 +1,5 @@
 import { BLOCK_EXPLORER_URL } from '@darkforest_eth/constants';
-import { WHITELIST_CONTRACT_ADDRESS } from '@darkforest_eth/contracts';
+import { WHITELIST_CONTRACT_ADDRESS } from '@dfdao/contracts';
 import { EthConnection, neverResolves, weiToEth } from '@darkforest_eth/network';
 import { address } from '@darkforest_eth/serde';
 import { utils, Wallet } from 'ethers';
@@ -364,11 +364,12 @@ export function GameLandingPage() {
       try {
         const address = ethConnection?.getAddress();
         if (!address || !ethConnection) throw new Error('not logged in');
-
+        console.log(WHITELIST_CONTRACT_ADDRESS);
         const whitelist = await ethConnection.loadContract(
           WHITELIST_CONTRACT_ADDRESS,
           loadWhitelistContract
         );
+        console.log(whitelist);
         const isWhitelisted = await whitelist.isWhitelisted(address);
 
         terminal.current?.println('');

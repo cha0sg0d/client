@@ -73,6 +73,11 @@ module.exports = {
         type: 'asset/resource',
         include: /@darkforest_eth/,
       },
+      {
+        test: /\.(wasm|zkey|json)$/,
+        type: 'asset/resource',
+        include: /@dfdao/,
+      },
       // All output '.js' files will have any sourcemaps
       // re-processed by 'source-map-loader'.
       {
