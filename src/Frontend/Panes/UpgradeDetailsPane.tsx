@@ -80,15 +80,18 @@ export function UpgradeDetailsPane({
   const account = useAccount(uiManager);
   const planetAtMaxRank = isFullRank(planet);
 
+  const UPGRADEABLE_PLANETS = uiManager.getGameManager().getContractConstants().UPGRADEABLE_PLANETS;
+
   let content = (
     <CenterBackgroundSubtext width={'100%'} height='100px'>
       Select a Planet <br /> You Own
     </CenterBackgroundSubtext>
   );
 
+
   if (planet && account) {
     if (planet.owner !== account) {
-    } else if (planet.planetType !== PlanetType.PLANET || planet.silverCap === 0) {
+    } else if (!UPGRADEABLE_PLANETS[planet.planetType] || planet.silverCap === 0) {
       content = (
         <CenterBackgroundSubtext width={'100%'} height='100px'>
           This Planet <br /> is not Upgradeable

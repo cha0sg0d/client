@@ -796,7 +796,8 @@ export class ContractsAPI extends EventEmitter {
       BIOME_THRESHOLD_2,
       PLANET_RARITY,
       PHOTOID_ACTIVATION_DELAY,
-      LOCATION_REVEAL_COOLDOWN
+      LOCATION_REVEAL_COOLDOWN,
+      UPGRADEABLE_PLANETS
     } = await this.makeCall(this.coreContract.gameConstants);
 
     const TOKEN_MINT_END_SECONDS = (
@@ -855,6 +856,7 @@ export class ContractsAPI extends EventEmitter {
       PLANET_RARITY: PLANET_RARITY.toNumber(),
       PLANET_TYPE_WEIGHTS,
       ARTIFACT_POINT_VALUES,
+      UPGRADEABLE_PLANETS,
 
       PHOTOID_ACTIVATION_DELAY: PHOTOID_ACTIVATION_DELAY.toNumber(),
       SPAWN_RIM_AREA: SPAWN_RIM_AREA.toNumber(),
